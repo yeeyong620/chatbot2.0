@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minibot BKPS</title>
+    <style>
+        body {
+            background-color: #3377FF;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #chat-container {
+            background: white;
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        #chat-box {
+            height: 300px;
+            overflow-y: auto;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .bot-message {
+            color: green;
+            font-weight: bold;
+        }
+        .user-message {
+            color: blue;
+        }
+        button {
+            background: #3377FF;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0055CC;
+        }
+        input {
+            width: 70%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="chat-container">
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Taip jawapan anda...">
+        <button id="send-button">Hantar</button>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
+
